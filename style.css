@@ -1,0 +1,71 @@
+@font-face {
+	font-family: darkSoulsFont;
+	src: url(/font/OptimusPrinceps.ttf);
+}
+
+body {
+	background-color: dimgray;
+}
+
+.background-image-setup {
+	background-image: url("/assets/MENU_CharaMake_Noise.PNG");
+	width: 211mm;
+	height: 211mm;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-option {
+	font-family: darkSoulsFont;
+	background-color: rgba(0, 0, 0, 0);
+	color: azure;
+	border: none;
+	padding: 32px 32px 0px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+
+	position: relative;
+	z-index: 1;
+}
+
+.stress-between-buttons {
+	width: 90%;
+}
+
+.under-button {
+	display: none;
+    position: absolute;
+    top: 35%;
+    left: 24%;
+    z-index: 2;
+}
+
+.under-button img {
+	padding: 32px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.menu-option:hover + .under-button{
+	display: block;
+}
+
+.menu-option:hover {
+	color: burlywood;
+}
